@@ -5,10 +5,10 @@ const config = {
 }
 
 const config_dropdown_links = [
-    {
-        name: "API",
-        links: "https://api.fadev.org"
-    },
+    // {
+    //     name: "API",
+    //     links: "https://api.fadev.org"
+    // },
     {
         name: "Book",
         links: "/ebook"
