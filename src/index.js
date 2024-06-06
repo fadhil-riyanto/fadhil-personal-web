@@ -11,6 +11,10 @@ import '../node_modules/bootstrap-icons/font/bootstrap-icons.min.css';
 // page
 import IndexPage from './page/Index'
 import AboutPage from './page/About'
+import UnderConstruction from './page/UnderConstruction'
+
+// essential
+import Footer from './components/Footer'
 
 import {
   createBrowserRouter,
@@ -25,8 +29,24 @@ const router = createBrowserRouter([
     element: <IndexPage />,
   },
   {
+    path: "/blog",
+    element: <UnderConstruction />
+  },
+  {
     path: "/about",
-    element: <AboutPage />
+    element: <UnderConstruction />
+  },
+  {
+    path: "/links",
+    element: <UnderConstruction />
+  },
+  {
+    path: "/projects",
+    element: <UnderConstruction />
+  },
+  {
+    path: "/resume",
+    element: <UnderConstruction />
   }
 ]);
 
@@ -37,6 +57,7 @@ root.render(
     {/* <App /> */}
 
     <RouterProvider router={router} />
+    <Footer />
   </React.StrictMode>
 );
 
