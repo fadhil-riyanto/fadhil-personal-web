@@ -1,6 +1,7 @@
 const config = {
     BASE_URL: "https://fadev.org",
-    SITENAME: "Fadhil DEV"
+    SITENAME: "Fadhil DEV",
+    BIO: "Just human"
 }
 
 const config_dropdown_links = [
@@ -41,27 +42,30 @@ const config_navbar_links = [
         links: "/projects"
     },
     {
-        name: "Contact",
-        links: "/contact"
+        name: "Resume",
+        links: "/resume"
     }
 ]
 
-const config_footer_links = [
+const config_connect_links = [
     {
         name: "Telegram",
-        links: "https://fadhil_riyanto.t.me"
+        links: "https://fadhil_riyanto.t.me",
+        icon: "bi bi-telegram"
     },
     {
         name: "Github",
-        links: "https://github.com/fadhil-riyanto"
+        links: "https://github.com/fadhil-riyanto",
+        icon: "bi bi-github"
     },
     {
         name: "Google developer",
-        links: "https://developers.google.com/profile/u/fadhil-riyanto"
+        links: "https://developers.google.com/profile/u/fadhil-riyanto",
+        icon: "bi bi-google"
     }
 ]
 
 
 export {
-    config, config_dropdown_links, config_navbar_links, config_footer_links
+    config, config_dropdown_links, config_navbar_links, config_connect_links
 }
