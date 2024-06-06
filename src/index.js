@@ -10,7 +10,7 @@ import '../node_modules/bootstrap-icons/font/bootstrap-icons.min.css';
 
 // page
 import IndexPage from './page/Index'
-import AboutPage from './page/About'
+import BlogPage from './page/Blogs'
 import UnderConstruction from './page/UnderConstruction'
 
 // essential
@@ -30,7 +30,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/blog",
-    element: <UnderConstruction />
+    element: <BlogPage />
   },
   {
     path: "/about",
