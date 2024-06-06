@@ -7,7 +7,7 @@ const IndexPage = () => {
     return (
         <>
             <Nav />
-            <div class="container-fluid fadhil_r_bg_color">
+            <div class="fadhil_r_bg_color">
                 <div className='container py-4 min-vh-100'>
                 <Jumbotron />
                 </div>
