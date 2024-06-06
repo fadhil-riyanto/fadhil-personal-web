@@ -1,9 +1,12 @@
-import config_footer_links from '../config';
+import { config_connect_links, config } from '../config';
+import { Link } from 'react-router-dom';
+
+
 
 const FooterList = ({name, links}) => {
     return (
         <li>
-            <a href={links}>{name}</a>
+            <a href={links} className='text-decoration-none'>{name}</a>
         </li>
     );
 }
@@ -15,9 +18,11 @@ const Footer = () => {
                 <div className="container py-4">
                     <div className="row gy-4 gx-5">
                     <div className="col-lg-4 col-md-6">
-                        <h5 className="h1 text-white">FADEV</h5>
+                        <h5 className="h1 text-white">
+                            Fadhil DEV
+                        </h5>
                         <p className="small text-white">
-                        Hanya programmer yang sedang menulis kode.
+                            {config.BIO}
                         </p>
                         <p className="small text-white mb-0">
                         © Copyrights. All rights reserved.{" "}
@@ -27,10 +32,10 @@ const Footer = () => {
                         </p>
                     </div>
                     <div className="col-lg-4 col-md-6">
-                        <h5 className="text-white mb-3">Link s</h5>
+                        <h5 className="text-white mb-3">Links</h5>
                         <ul className="list-unstyled text-muted">
-                            {config_footer_links.map((item) => 
-                                <FooterList name={item.name} link={item.links}/>
+                            {config_connect_links.map((item) => 
+                                <FooterList name={item.name} links={item.links}/>
                             )}
                             
                         </ul>
@@ -43,4 +48,4 @@ const Footer = () => {
     );
 }
 
-export default { Footer };
+export default Footer;
