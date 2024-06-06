@@ -76,7 +76,7 @@ const NavLinks = () => {
         <ul className="nav d-none d-lg-flex">
             {config_navbar_links.map((item) => 
                 <li className="nav-item">
-                    <a href={item.links} className="px-2 px-lg-4 nav-link text-white fd_link_hoverable">{item.name}</a>
+                    <Link to={item.links} className="px-2 px-lg-4 nav-link text-white fd_link_hoverable">{item.name}</Link>
                 </li>
             )}
            
