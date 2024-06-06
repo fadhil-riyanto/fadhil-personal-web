@@ -1,0 +1,46 @@
+/* used */
+.fadhil_r_bg_color {
+  background-color: #08141b;
+}
+
+
+
+/* end */
+.fadhil_r_link_hoverable:hover {
+    border-bottom: 1px solid yellow;
+    border-radius: 0px;
+}
+
+
+.fadhil_r_font_color {
+    color: #ccd6f6;
+}
+
+.fadhil_r_font_color_up {
+    color: #c4d0f7;
+}
+
+.fadhil_r_font_color_secondary {
+    color: #8892b0;
+}
+
+.fadhil_r_dotted_border {
+    border-bottom: 1px dashed white;
+}
+
+.fadhil_r_resume_bgcolor {
+    background-color: #0fb49d;
+}
+
+.fadhil_r_font_size_p {
+    font-size: 20px;
+}
+
+.fadhil_r_blog_lists {
+    border: none;
+    border-bottom: 1px dashed green;
+}
+
+.fadhil_r_blog_lists:hover {
+    border-bottom: 1px solid yellow;
+}
