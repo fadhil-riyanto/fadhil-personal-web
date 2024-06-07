@@ -16,6 +16,9 @@ import UnderConstruction from './page/UnderConstruction'
 // essential
 import Footer from './components/Footer'
 
+// blog
+import GenBlogRouteArray from './page/blogs/_Register.js'
+
 import {
   createBrowserRouter,
   RouterProvider,
@@ -23,7 +26,8 @@ import {
   Link,
 } from "react-router-dom";
 
-const router = createBrowserRouter([
+
+const default_route = [
   {
     path: "/",
     element: <IndexPage />,
@@ -48,7 +52,13 @@ const router = createBrowserRouter([
     path: "/resume",
     element: <UnderConstruction />
   }
-]);
+]
+// 
+// console.log(GenBlogRouteArray())
+const withBlogRoute = default_route.concat(GenBlogRouteArray())
+// console.log(withBlogRoute)
+
+const router = createBrowserRouter(withBlogRoute);
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
