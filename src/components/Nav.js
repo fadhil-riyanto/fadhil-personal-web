@@ -102,7 +102,7 @@ const NavBody = () => {
         <nav className="navbar bg-dark fixed-top" >
             <div className="container-fluid">
                 <NavBrand />
-                <Separator />
+                {/* <Separator /> */}
                 <NavLinks />
                 <Offcanvas />
             </div>
