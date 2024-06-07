@@ -35,7 +35,7 @@ const Footer = () => {
                         <h5 className="text-white mb-3">Links</h5>
                         <ul className="list-unstyled text-muted">
                             {config_connect_links.map((item) => 
-                                <FooterList name={item.name} links={item.links}/>
+                                <FooterList name={item.name} links={item.links} key={item.links}/>
                             )}
                             
                         </ul>

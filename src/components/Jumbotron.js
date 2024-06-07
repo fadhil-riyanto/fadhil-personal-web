@@ -2,7 +2,7 @@ import { config_connect_links, config } from '../config';
 
 const LinksJumbotron = ({links, icon}) => {
     return (
-        <a href={links} className='text-white'><i class={"mx-1 " + icon}></i></a>
+        <a href={links} className='text-white'><i className={"mx-1 " + icon}></i></a>
         
     )
 }
@@ -29,7 +29,7 @@ const Jumbotron = (darkModeState) => {
                             Contact me
                             </button>
                         </div>
-                        <div className="col-lg-3 order-1 order-lg-2"> 5
+                        <div className="col-lg-3 order-1 order-lg-2">
                             <img src="https://avatars.githubusercontent.com/u/61084125" className="img-fluid"></img>
                         </div>
                     </div>
