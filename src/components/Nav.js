@@ -30,9 +30,9 @@ const Offcanvas = () => {
 
             <div className="offcanvas offcanvas-end bg-dark" tabIndex={-1} id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                 <div className="offcanvas-header">
-                    <h5 className="offcanvas-title text-white me-auto" id="offcanvasNavbarLabel">
+                    <Link to="/" className="offcanvas-title text-white text-decoration-none me-auto" id="offcanvasNavbarLabel">
                         {config.SITENAME}
-                    </h5>
+                    </Link>
                     <a type="button" className="text-white" data-bs-dismiss="offcanvas" aria-label="Close">
                         <i className="bi bi-x-lg" />
                     </a>
@@ -41,7 +41,7 @@ const Offcanvas = () => {
                     <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
                         {config_navbar_links.map((item) => 
                             <li className="nav-item">
-                                <Link to={item.links} className="nav-link text-white" data-bs-dismiss="offcanvas">{item.name}</Link>
+                                <Link to={item.links} className="nav-link text-white" >{item.name}</Link>
                             </li>
                         )}
 
