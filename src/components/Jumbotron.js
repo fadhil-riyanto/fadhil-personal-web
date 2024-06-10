@@ -17,8 +17,8 @@ const Jumbotron = (darkModeState) => {
                         <div className="col-lg-9 order-2 order-lg-1">
                             <h1 className="display-5 fw-bold text-white pt-3">Hi, I'm Fadhil Riyanto</h1>
                             <p className="col-md-8 fs-4 text-white">
-                                A self taught backend programmer (littebit frontend),  18 y.o from Semarang, Central Java Indonesia.
-                                i'm interested in math and programming
+                                18 y.o from Semarang, Central Java, Indonesia.
+                                Interested in math and programming
                             </p>
                             <h3 className='text-white mb-5 mb-lg-none'>
                                 {config_connect_links.map((item) => 
