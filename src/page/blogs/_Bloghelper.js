@@ -43,6 +43,10 @@ class BlogHelper {
             </>
         )
     }  
+
+    static Asset(filename) {
+        return "https://cdn.jsdelivr.net/gh/fadhil-riyanto/fadhil-personal-web@master/assets/" + filename
+    }
 }
 
 export default BlogHelper;

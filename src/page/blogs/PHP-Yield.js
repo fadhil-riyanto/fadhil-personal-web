@@ -6,7 +6,7 @@ const Header = {
     tag: ["php", "tech"],
     path: "php-yield",
     created: "Monday, 10 Jun 2024",
-    thumbnail: "https://www.php.net/images/logos/new-php-logo.png",
+    thumbnail: BlogHelper.Asset("new-php-logo.png"),
     text_thumbnail: String.raw`yield keyword. The heart of a generator function is the yield keyword. In its simplest form, a yield statement looks much like a return statement, except that instead of stopping execution of the function and returning ...`
 }
 
