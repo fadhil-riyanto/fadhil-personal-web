@@ -1,4 +1,5 @@
 import Helloworld from "./Helloworld"
+import PHP_Yield from "./PHP-Yield"
 
 // need for structure
 
@@ -6,7 +7,7 @@ import Nav from '../../components/Nav'
 import { Link } from 'react-router-dom'
 
 const list = [
-    Helloworld
+    Helloworld, PHP_Yield
 ]
 
 const BlogHeaderAticle = ({title, created_date}) => {
@@ -83,7 +84,7 @@ export function GenArticle() {
             title_article: data.header.title_html,
             tag: data.header.tag,
             path: "/blog/" + data.header.path,
-            thumbnail: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/PSP-Homebrew.jpeg/800px-PSP-Homebrew.jpeg",
+            thumbnail: data.header.thumbnail,
             text_thumbnail: data.header.text_thumbnail
         });
     }
