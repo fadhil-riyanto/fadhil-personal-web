@@ -53,10 +53,8 @@ const default_route = [
     element: <UnderConstruction />
   }
 ]
-// 
-// console.log(GenBlogRouteArray())
+
 const withBlogRoute = default_route.concat(GenBlogRouteArray())
-// console.log(withBlogRoute)
 
 const router = createBrowserRouter(withBlogRoute);
 
