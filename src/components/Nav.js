@@ -41,7 +41,7 @@ const Offcanvas = () => {
                     <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
                         {config_navbar_links.map((item) => 
                             <li className="nav-item">
-                                <Link to={item.links} className="nav-link text-white" >{item.name}</Link>
+                                <Link to={item.links} className="nav-link text-white" key={item.links}>{item.name}</Link>
                             </li>
                         )}
 
@@ -52,13 +52,10 @@ const Offcanvas = () => {
                             </a>
                             <ul className="dropdown-menu" data-bs-theme="dark">
                                 {config_dropdown_links.map((item) => 
-                                    <NavDropdownLinks name={item.name} link={item.links}/>
+                                    // console.log("datas " + item.links)
+                                    <NavDropdownLinks name={item.name} link={item.links} key={item.links}/>
                                 )}
-                                <li>
-                                    <a className="dropdown-item fd_font_color_secondary" href="#">
-                                        Publications
-                                    </a>
-                                </li>
+                                
                             </ul>
                         </li>
                     </ul>
@@ -76,7 +73,7 @@ const NavLinks = () => {
         <ul className="nav d-none d-lg-flex">
             {config_navbar_links.map((item) => 
                 <li className="nav-item">
-                    <Link to={item.links} className="px-2 px-lg-4 nav-link text-white fd_link_hoverable">{item.name}</Link>
+                    <Link to={item.links} className="px-2 px-lg-4 nav-link text-white fd_link_hoverable" key={item.links}>{item.name}</Link>
                 </li>
             )}
            
@@ -87,7 +84,7 @@ const NavLinks = () => {
                     </button>
                     <ul className="fd_bg_color dropdown-menu ">
                         {config_dropdown_links.map((item) => 
-                            <NavDropdownLinks name={item.name} link={item.links}/>
+                            <NavDropdownLinks name={item.name} link={item.links} key={item.links}/>
                         )}
                     </ul>
                 </div>
