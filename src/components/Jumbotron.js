@@ -1,4 +1,4 @@
-import { config_connect_links, config } from '../config';
+import { config_connect_links } from '../config';
 
 const LinksJumbotron = ({links, icon}) => {
     return (
@@ -30,7 +30,7 @@ const Jumbotron = (darkModeState) => {
                             </button>
                         </div>
                         <div className="col-lg-3 order-1 order-lg-2">
-                            <img src="https://avatars.githubusercontent.com/u/61084125" className="img-fluid"></img>
+                            <img src="https://avatars.githubusercontent.com/u/61084125" alt="profile" className="img-fluid"></img>
                         </div>
                     </div>
                 </div>

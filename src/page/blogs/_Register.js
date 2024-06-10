@@ -4,7 +4,6 @@ import PHP_Yield from "./PHP-Yield"
 // need for structure
 
 import Nav from '../../components/Nav'
-import { Link } from 'react-router-dom'
 
 const list = [
     Helloworld, PHP_Yield

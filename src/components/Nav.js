@@ -1,12 +1,6 @@
 import { Link } from "react-router-dom";
 import { config, config_dropdown_links, config_navbar_links } from "../config"
 
-const Separator = () => {
-    return (
-        <div className="vr me-auto"></div>
-    );
-}
-
 const NavBrand = () => {
     return (
         <div className="d-flex">
@@ -33,9 +27,9 @@ const Offcanvas = () => {
                     <Link to="/" className="offcanvas-title text-white text-decoration-none me-auto" id="offcanvasNavbarLabel">
                         {config.SITENAME}
                     </Link>
-                    <a type="button" className="text-white" data-bs-dismiss="offcanvas" aria-label="Close">
+                    <button type="button" className="text-white btn btn-link" data-bs-dismiss="offcanvas" aria-label="Close">
                         <i className="bi bi-x-lg" />
-                    </a>
+                    </button>
                 </div>
                 <div className="offcanvas-body">
                     <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
@@ -47,9 +41,9 @@ const Offcanvas = () => {
 
                         
                         <li className="nav-item dropdown">
-                            <a className="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <button className="nav-link dropdown-toggle text-white btn btn-link" href="#"data-bs-toggle="dropdown">
                                 Other
-                            </a>
+                            </button>
                             <ul className="dropdown-menu" data-bs-theme="dark">
                                 {config_dropdown_links.map((item) => 
                                     // console.log("datas " + item.links)

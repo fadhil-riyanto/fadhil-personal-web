@@ -22,7 +22,7 @@ const BlogTags = ({tag, data_blog_list_set}) => {
         <>
             <kbd className='mx-1 text-decoration-none text-white' >
                 
-                <a onClick={() => ChangeListByTag(tag, data_blog_list_set)} key={tag} style={{cursor: "pointer"}}>#{tag}</a>
+                <button className='btn btn-link' onClick={() => ChangeListByTag(tag, data_blog_list_set)} key={tag} style={{cursor: "pointer"}}>#{tag}</button>
             </kbd>
         </>
     );
@@ -57,7 +57,7 @@ const BlogArticleCard = ({article_link, thumbnail, title, text_thumbnail}) => {
         <>
             <div className="col-lg-3 col-md-4 col-sm-6 col-12 px-md-1 px-4">
                 <Link to={article_link} className="fadhil_r_bg_color m-2 text-decoration-none">
-                    <img src={thumbnail} className='mx-auto d-block img-fluid' style={{width: "100%", height: "140px"}} ></img>
+                    <img src={thumbnail} alt="thumbnail" className='mx-auto d-block img-fluid' style={{width: "100%", height: "140px"}} ></img>
                     {/* <svg className="bd-placeholder-img card-img-top" width="100%" height="200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> */}
                     <div className="card-body fadhil_r_bg_color">
                         <p className="card-text text-white">

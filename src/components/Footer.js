@@ -1,7 +1,4 @@
 import { config_connect_links, config } from '../config';
-import { Link } from 'react-router-dom';
-
-
 
 const FooterList = ({name, links}) => {
     return (
@@ -26,7 +23,7 @@ const Footer = () => {
                             </p>
                             <p className="small text-white mb-0">
                             © Copyrights. All rights reserved.{" "}
-                            <a className="text-primary" href="#">
+                            <a className="text-primary" href="/">
                                 fadev.org
                             </a>
                             </p>

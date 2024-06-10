@@ -21,9 +21,7 @@ import GenBlogRouteArray from './page/blogs/_Register.js'
 
 import {
   createBrowserRouter,
-  RouterProvider,
-  Route,
-  Link,
+  RouterProvider
 } from "react-router-dom";
 
 
