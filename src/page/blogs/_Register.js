@@ -5,6 +5,10 @@ import Helloworld from "./Helloworld"
 import Nav from '../../components/Nav'
 import { Link } from 'react-router-dom'
 
+const list = [
+    Helloworld
+]
+
 const BlogHeaderAticle = ({title, created_date}) => {
     return (
         <>
@@ -52,10 +56,6 @@ const BuildBlogStructure = ({element, header}) => {
 }
 
 const GenBlogList = function* () {
-    const list = [
-        Helloworld
-    ]
-
     for (let val of list) {
         yield {
             path: "/blog/" + val.header.path,
@@ -75,13 +75,32 @@ const GenBlogRouteArray = () => {
     return arr
 }
 
-// const GenBlogRouteArray = () => {
-//     return [
-//         {
-//             path: "/oke",
-//             element: <h1>ije</h1>
-//         }
-//     ]
-// }
+export function GenArticle() {
+    var arr = []
+    // console.log(GenBlogList())
+    for (const data of list) {
+        arr.push({
+            title_article: data.header.title_html,
+            tag: data.header.tag,
+            path: "/blog/" + data.header.path,
+            thumbnail: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/PSP-Homebrew.jpeg/800px-PSP-Homebrew.jpeg",
+            text_thumbnail: data.header.text_thumbnail
+        });
+    }
+    
+    return arr
+}
+
+export function GenTags() {
+    let concated = []
+    for(const data of list) {
+        concated = concated.concat([...new Set(data.header.tag)])
+    }
+    // console.log(concated)
+    // list.map((data) => data.header.tag.map((tags) => console.log(tags)))
+    // let uniq = [...new Set(list.map((data) => data.header.tag.map((data2) => data2)))];
+    // console.log(concated)
+    return concated
+}
 
 export default GenBlogRouteArray;

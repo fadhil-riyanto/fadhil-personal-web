@@ -3,15 +3,16 @@ import BlogHelper from "./_Bloghelper"
 const Header = {
     title_html: "Hello world",
     title_article: "Hello world, my first page",
-    tag: ["react"],
+    tag: ["react", "hello", "tech"],
     path: "hello-world",
-    created: "Friday, 7 Jun 2024"
+    created: "Friday, 7 Jun 2024",
+    thumbnail: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/PSP-Homebrew.jpeg/800px-PSP-Homebrew.jpeg",
+    text_thumbnail: String.raw`A "Hello, World!" program is generally a simple computer program which outputs (or displays) to the screen (often the console) a message similar to "Hello, ...`
 }
 
 const Content = () => {
     return (
         <>
-        
         <p>
             <h3>1. Hello World!</h3>
             {BlogHelper.Img_WithInfoSource(
