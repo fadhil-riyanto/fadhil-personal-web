@@ -1,3 +1,5 @@
+import BlogHelper from "./page/blogs/_Bloghelper"
+
 const config = {
     BASE_URL: "https://fadev.org",
     SITENAME: "Fadhil DEV",
@@ -22,6 +24,33 @@ const config_dropdown_links = [
     //     name: "Shortlink",
     //     links: "s.fadev.org"
     // }
+]
+
+const config_skills_level = [
+    {
+        logo: BlogHelper.Asset("new-php-logo.png"),
+        name: "PHP", 
+        level: "Advanced"
+    },
+    {
+        logo: BlogHelper.Asset("115px-Laravel.svg.png"),
+        name: "Laravel", 
+        level: "Advanced"
+    }
+    // ,
+    // {
+    //     name: "Laravel", 
+    //     level: "Advanced"
+    // },
+    // ,
+    // {
+    //     name: "Node", 
+    //     level: "Intermediate"
+    // },
+    // {
+    //     name: "Go", 
+    //     level: "Intermediate"
+    // },
 ]
 
 const config_navbar_links = [
@@ -67,5 +96,5 @@ const config_connect_links = [
 
 
 export {
-    config, config_dropdown_links, config_navbar_links, config_connect_links
+    config, config_dropdown_links, config_navbar_links, config_connect_links, config_skills_level
 }
