@@ -11,6 +11,7 @@ import '../node_modules/bootstrap-icons/font/bootstrap-icons.min.css';
 // page
 import IndexPage from './page/Index'
 import BlogPage from './page/Blogs'
+import AboutPage from './page/About.js';
 import UnderConstruction from './page/UnderConstruction'
 
 // essential
@@ -36,7 +37,7 @@ const default_route = [
   },
   {
     path: "/about",
-    element: <UnderConstruction />
+    element: <AboutPage />
   },
   {
     path: "/links",
