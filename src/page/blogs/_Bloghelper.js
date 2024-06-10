@@ -1,4 +1,9 @@
 import katex from 'katex';
+import hljs from 'highlight.js/lib/core';
+import php from 'highlight.js/lib/languages/php';
+import 'highlight.js/styles/github.css';
+
+hljs.registerLanguage('php', php);
 
 class BlogHelper {
     static Img_WithInfoSource(src, info, source_article) {
@@ -26,6 +31,19 @@ class BlogHelper {
             </>
         )
     }
+
+    static Php(str) {
+        let rendered = hljs.highlight(
+            str, { language: 'php' }
+        ).value
+
+        return (
+            <>
+                <pre>{ <div dangerouslySetInnerHTML={{ __html: rendered }} /> }</pre>
+            </>
+        )
+        return 
+    }  
 }
 
 export default BlogHelper;
