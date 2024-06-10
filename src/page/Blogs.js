@@ -20,9 +20,9 @@ const ChangeListByTag = (tag, data_blog_list_set) => {
 const BlogTags = ({tag, data_blog_list_set}) => {
     return (
         <>
-            <kbd className='mx-1 text-decoration-none text-white' >
+            <kbd className='mx-1 ' >
                 
-                <button className='btn btn-link' onClick={() => ChangeListByTag(tag, data_blog_list_set)} key={tag} style={{cursor: "pointer"}}>#{tag}</button>
+                <button className='btn btn-link text-decoration-none text-white mx-1' onClick={() => ChangeListByTag(tag, data_blog_list_set)} key={tag} style={{cursor: "pointer"}}>#{tag}</button>
             </kbd>
         </>
     );
