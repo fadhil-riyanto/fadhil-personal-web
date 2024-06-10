@@ -42,7 +42,6 @@ class BlogHelper {
                 <pre>{ <div dangerouslySetInnerHTML={{ __html: rendered }} /> }</pre>
             </>
         )
-        return 
     }  
 }
 
