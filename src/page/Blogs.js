@@ -2,20 +2,35 @@
 import Nav from '../components/Nav'
 import { Link } from 'react-router-dom'
 import { GenArticle, GenTags } from './blogs/_Register'
+import { useState } from 'react'
 
-const data_blog_list = GenArticle()
+
 const data_tags = GenTags()
-const BlogTags = ({tag, link}) => {
+
+const ChangeListByTag = (tag, data_blog_list_set) => {
+    let pack = [];
+    for(const data of GenArticle()) {
+        if (data.tag.includes(tag)) {
+            pack.push(data)
+        }
+    }
+    data_blog_list_set(pack)
+    console.log("clicked" + tag)
+}
+const BlogTags = ({tag, data_blog_list_set}) => {
     return (
         <>
-            <kbd className='mx-1'>
-                <Link to={link} className='text-decoration-none text-white'>#{tag}</Link>
+            <kbd className='mx-1 text-decoration-none text-white' >
+                
+                <a onClick={() => ChangeListByTag(tag, data_blog_list_set)} key={tag} style={{cursor: "pointer"}}>#{tag}</a>
             </kbd>
         </>
     );
 }
 
-const BlogHeading = () => {
+const BlogHeading = ({data_blog_list_set}) => {
+    
+
     return (
         <>
             <section className="py-5 text-center container-fluid fadhil_r_bg_color_secondary">
@@ -27,7 +42,7 @@ const BlogHeading = () => {
                     </p>
                         {/* {data_tags.toString()} */}
                         {data_tags.map((item) => 
-                            <BlogTags tag={item} link={"/blog/tags/" + item}/>
+                            <BlogTags tag={item} data_blog_list_set={data_blog_list_set}/>
                         )}
                     </div>
                 </div>
@@ -58,22 +73,17 @@ const BlogArticleCard = ({article_link, thumbnail, title, text_thumbnail}) => {
 }
 
 const BlogPage = () => {
+    let [data_blog_list, data_blog_list_set] = useState(GenArticle())
+    
     return (
         <>
             <Nav />
             <div class="fadhil_r_bg_color">
                 <div className='py-4 min-vh-100'>
-                <BlogHeading />
+                <BlogHeading data_blog_list_set={data_blog_list_set}/>
                 <div className='container'>
                     <div className="row mt-4">
-                        {/* <BlogArticleCard />
-                        <BlogArticleCard />
-                        <BlogArticleCard />
-                        <BlogArticleCard />
-                        <BlogArticleCard /> */}
-                        {/* {console.log(data_blog_list)} */}
                         {data_blog_list.map(function(data, i){
-                            console.log(data.thumbnail)
                             return <BlogArticleCard article_link={data.path} thumbnail={data.thumbnail} title={data.title_article} text_thumbnail={data.text_thumbnail} key={i} />;
                         })}
                     </div>
