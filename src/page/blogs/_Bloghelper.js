@@ -4,7 +4,7 @@ class BlogHelper {
     static Img_WithInfoSource(src, info, source_article) {
         return (
             <>
-                <img src={src} className="img-fluid"></img>
+                <img src={src} alt={src} className="img-fluid"></img>
                 <figure className="mb-1">
                     <blockquote className="blockquote">
                         <p>{info}</p>
