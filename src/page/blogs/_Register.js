@@ -97,10 +97,7 @@ export function GenTags() {
     for(const data of list) {
         concated = concated.concat([...new Set(data.header.tag)])
     }
-    // console.log(concated)
-    // list.map((data) => data.header.tag.map((tags) => console.log(tags)))
-    // let uniq = [...new Set(list.map((data) => data.header.tag.map((data2) => data2)))];
-    // console.log(concated)
+
     return concated
 }
 
