@@ -48,3 +48,7 @@
 .fadhil_r_blog_lists:hover {
     border-bottom: 1px solid yellow;
 }
+
+.fadhil_r_hoverable:hover {
+    background-color: rgba(255, 255, 47, 0.192);
+}
