@@ -82,7 +82,7 @@ const BlogPage = () => {
                 <div className='py-4 min-vh-100'>
                 <BlogHeading data_blog_list_set={data_blog_list_set}/>
                 <div className='container'>
-                    <div className="row mt-4">
+                    <div className="row mt-1">
                         {data_blog_list.map(function(data, i){
                             return <BlogArticleCard article_link={data.path} thumbnail={data.thumbnail} title={data.title_article} text_thumbnail={data.text_thumbnail} key={i} />;
                         })}

@@ -7,7 +7,7 @@ const ProjectHeading = () => {
     return (
         <>
             <section className="pt-5 text-center container-fluid fadhil_r_bg_color_secondary">
-                <div className="row py-lg-5">
+                <div className="row py-lg-5 py-5">
                     <div className="col-lg-6 col-md-8 mx-auto">
                         <h1 className="fw-light text-white">Fadhil's projects</h1>
                         <p className="lead text-white">
@@ -45,7 +45,7 @@ const ProjectsPage = () => {
             <div className="fadhil_r_bg_color">
                 <ProjectHeading />
                 <div className='container min-vh-100'>
-                    <div className='row mt-5'>
+                    <div className='row mt-1'>
                         {config_project_list.map((data) => 
                             <ProjectCard 
                                 image={data.image}
