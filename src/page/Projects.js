@@ -25,7 +25,7 @@ const ProjectHeading = () => {
 const ProjectCard = ({image, title, text, source_code}) => {
     return (
         <>
-            <a className='col-4 text-decoration-none px-2 py-2' href={source_code}>
+            <a className='col-lg-4 col-md-6 col-12 text-decoration-none px-2 py-2' href={source_code}>
                 <div className='card h-100 border border-0'>
                     <img src={image} alt='thumbnail' className='card-img-top'></img>
                     <div class="card-body fadhil_r_bg_color_secondary text-white">
