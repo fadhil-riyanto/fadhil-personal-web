@@ -138,10 +138,6 @@ const config_navbar_links = [
         links: "/about"
     },
     {
-        name: "Links",
-        links: "/links"
-    },
-    {
         name: "Projects",
         links: "/projects"
     },
@@ -169,7 +165,30 @@ const config_connect_links = [
     }
 ]
 
+const config_project_list = [
+    {
+        image: BlogHelper.Asset("c2-jujurCBT.png"),
+        title: "JujurCBT", 
+        text_thumbnail: "simple CBT that prevent student doing cheat with ctrl + c",
+        source_code: "https://github.com/fadhil-riyanto/jujurCBT"
+    },
+    {
+        image: BlogHelper.Asset("math-imouto-1.png"),
+        title: "Math Imouto", 
+        text_thumbnail: "endless math game for first grade school",
+        source_code: "https://github.com/fadhil-riyanto/math-imouto"
+    },
+    {
+        image: BlogHelper.Asset("myweb.png"),
+        title: "Personal website", 
+        text_thumbnail: "My personal website, used to display my profile, skills and projects, and my place to try new technology (react).",
+        source_code: "https://github.com/fadhil-riyanto/fadhil-personal-web"
+    }
+]
+
 
 export {
-    config, config_dropdown_links, config_navbar_links, config_connect_links, config_skills_level, config_tools_level
+    config, config_dropdown_links, config_navbar_links, 
+    config_connect_links, config_skills_level, config_tools_level,
+    config_project_list
 }
