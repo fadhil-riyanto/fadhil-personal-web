@@ -24,6 +24,7 @@ import {
   createBrowserRouter,
   RouterProvider
 } from "react-router-dom";
+import ProjectsPage from './page/Projects.js';
 
 
 const default_route = [
@@ -40,12 +41,8 @@ const default_route = [
     element: <AboutPage />
   },
   {
-    path: "/links",
-    element: <UnderConstruction />
-  },
-  {
     path: "/projects",
-    element: <UnderConstruction />
+    element: <ProjectsPage />
   },
   {
     path: "/resume",
