@@ -19,15 +19,15 @@ const Offcanvas = () => {
     return (
         <>
             <div className="d-lg-none">
-                <i className="bi bi-three-dots text-white" style={{ fontSize: 25 }} data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"/>
+                <i className="bi bi-three-dots text-white" style={{ fontSize: 25 }} data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" />
             </div>
 
-            <div className="offcanvas offcanvas-end bg-dark" tabIndex={-1} id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div className="offcanvas offcanvas-end bg-dark" data-bs-scroll="true" tabIndex={-1} id="offcanvasNavbar" >
                 <div className="offcanvas-header">
                     <Link to="/" className="offcanvas-title text-white text-decoration-none me-auto" id="offcanvasNavbarLabel">
                         {config.SITENAME}
                     </Link>
-                    <button type="button" className="text-white btn btn-link" data-bs-dismiss="offcanvas" aria-label="Close">
+                    <button type="button" className="text-white btn btn-link" data-bs-dismiss="offcanvas" >
                         <i className="bi bi-x-lg" />
                     </button>
                 </div>
