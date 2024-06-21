@@ -1,5 +1,5 @@
 import Nav from '../components/Nav'
-import { config_skills_level, config_tools_level } from '../config'
+import { config_skills_level, config_tools_level, config_languange_programming } from '../config'
 import '../components/css/Custom.css'
 import { useState } from 'react'
 
@@ -10,6 +10,18 @@ const HeaderSection = ({text}) => {
                 <span className="border-bottom border-warning display-5 fw-bold text-white pt-3 ">
                     {text}
                 </span>
+            </div>
+        </>
+    )
+}
+
+const HeaderSectionSecondary = ({text}) => {
+    return (
+        <>
+            <div className='my-1'>
+                <h3 className="border-bottom border-warning fw-bold text-white pt-3 ">
+                    {text}
+                </h3>
             </div>
         </>
     )
@@ -38,28 +50,28 @@ const SkillCard = ({logo, name, level}) => {
     )
 }
 
-const SkillistTable = () => {
+// const SkillistTable = () => {
+    
+//     return (
+//         <>
+//             <div className='row'>
+//                 {/* <Skillcard logo="aaa"/> */}
+//                 {config_skills_level.map((data) => 
+//                     <SkillCard logo={data.logo} name={data.name} level={data.level}/>
+//                 )}
+//             </div>
+
+//         </>
+//     )
+// }
+
+const BuildTable = ({arr}) => {
     
     return (
         <>
             <div className='row'>
                 {/* <Skillcard logo="aaa"/> */}
-                {config_skills_level.map((data) => 
-                    <SkillCard logo={data.logo} name={data.name} level={data.level}/>
-                )}
-            </div>
-
-        </>
-    )
-}
-
-const ToolsTable = () => {
-    
-    return (
-        <>
-            <div className='row'>
-                {/* <Skillcard logo="aaa"/> */}
-                {config_tools_level.map((data) => 
+                {arr.map((data) => 
                     <SkillCard logo={data.logo} name={data.name} level={data.level}/>
                 )}
             </div>
@@ -75,10 +87,14 @@ const Skills = () => {
         {/* fadhil_r_bg_color */}
             <div className="py-lg-1 mb-4 mt-5 fadhil_r_bg_color rounded-3">
                 <div className="container-fluid">
-                    <HeaderSection text="Skills"/>
-                    <SkillistTable />
-                    <HeaderSection text="Tools"/>
-                    <ToolsTable />
+                    <HeaderSectionSecondary text="Programming Languange"/>
+                    <BuildTable arr={config_languange_programming}/>
+                    <HeaderSectionSecondary text="Skills"/>
+                    <BuildTable arr={config_skills_level}/>
+                    <HeaderSectionSecondary text="Tools"/>
+                    <BuildTable arr={config_tools_level}/>
+                    {/* <HeaderSection text="Tools"/>
+                    <ToolsTable /> */}
                 </div>
             </div>
 

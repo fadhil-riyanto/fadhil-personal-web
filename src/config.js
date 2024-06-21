@@ -26,12 +26,41 @@ const config_dropdown_links = [
     // }
 ]
 
-const config_skills_level = [
+const config_languange_programming = [
     {
         logo: BlogHelper.Asset("new-php-logo.png"),
         name: "PHP", 
         level: "Advanced"
     },
+    {
+        logo: BlogHelper.Asset("HHVM_logo.svg.png"),
+        name: "HHVM (hphp)", 
+        level: "Advanced"
+    },
+    {
+        logo: BlogHelper.Asset("Typescript_logo_2020.svg.png"),
+        name: "Typescript", 
+        level: "Advanced"
+    },
+    {
+        logo: BlogHelper.Asset("dotnet-logo.svg"),
+        name: ".NET (backend)", 
+        level: "Intermediate"
+    },
+    {
+        logo: BlogHelper.Asset("1920px-Go_Logo_Blue.svg.png"),
+        name: "Go", 
+        level: "Intermediate"
+    },
+    {
+        logo: BlogHelper.Asset("python-logo-only.png"),
+        name: "Python (backend)", 
+        level: "Advanced"
+    },
+]
+
+const config_skills_level = [
+    
     {
         logo: BlogHelper.Asset("115px-Laravel.svg.png"),
         name: "Laravel", 
@@ -43,55 +72,25 @@ const config_skills_level = [
         level: "Intermediate"
     },
     {
-        logo: BlogHelper.Asset("1920px-Go_Logo_Blue.svg.png"),
-        name: "Go", 
-        level: "Intermediate"
-    },
-    {
-        logo: BlogHelper.Asset("dotnet-logo.svg"),
-        name: ".NET (server)", 
-        level: "Intermediate"
-    },
-    {
-        logo: BlogHelper.Asset("python-logo-only.png"),
-        name: "Python (server)", 
-        level: "Advanced"
-    },
-    {
         logo: BlogHelper.Asset("css.png"),
         name: "CSS", 
         level: "Beginner"
     },
     {
-        logo: BlogHelper.Asset("javascript_original_logo_icon_146455.png"),
-        name: "JS (browser)", 
+        logo: BlogHelper.Asset("bootstrap-logo-shadow.png"),
+        name: "Bootstrap", 
         level: "Beginner"
     },
     {
-        logo: BlogHelper.Asset("bootstrap-logo-shadow.png"),
-        name: "Bootstrap", 
-        level: "Intermediate"
+        logo: BlogHelper.Asset("UIkit.svg"),
+        name: "UIKit", 
+        level: "Beginner"
     },
     {
         logo: BlogHelper.Asset("React.webp"),
         name: "React", 
         level: "Beginner"
     },
-    {
-        logo: BlogHelper.Asset("ISO_C++_Logo.svg.png"),
-        name: "C++", 
-        level: "Intermediate"
-    },
-    {
-        logo: BlogHelper.Asset("The_C_Programming_Language_logo.svg.png"),
-        name: "C", 
-        level: "Advanced"
-    },
-    {
-        logo: BlogHelper.Asset("HHVM_logo.svg.png"),
-        name: "HHVM", 
-        level: "Advanced"
-    }
     // 
 ]
 
@@ -103,12 +102,17 @@ const config_tools_level = [
     },
     {
         logo: BlogHelper.Asset("archlinuxlogo.square.png"),
-        name: "ArchLinux", 
+        name: "Arch Linux", 
         level: "Advanced"
     },
     {
         logo: BlogHelper.Asset("mariadb-logo-vertical_white.svg"),
-        name: "MariDB", 
+        name: "MariaDB", 
+        level: "Advanced"
+    },
+    {
+        logo: BlogHelper.Asset("png-transparent-mongodb-original-wordmark-logo-icon.png"),
+        name: "MongoDB", 
         level: "Advanced"
     },
     {
@@ -117,13 +121,13 @@ const config_tools_level = [
         level: "Advanced"
     },
     {
-        logo: BlogHelper.Asset("png-transparent-mongodb-original-wordmark-logo-icon.png"),
-        name: "MongoDB", 
+        logo: BlogHelper.Asset("llvm.png"),
+        name: "LLVM", 
         level: "Advanced"
     },
     {
-        logo: BlogHelper.Asset("png-transparent-mongodb-original-wordmark-logo-icon.png"),
-        name: "MongoDB", 
+        logo: BlogHelper.Asset("gdb.png"),
+        name: "GNU debugger", 
         level: "Advanced"
     }
 ]
@@ -142,8 +146,8 @@ const config_navbar_links = [
         links: "/projects"
     },
     {
-        name: "Resume",
-        links: "/resume"
+        name: "Contacts",
+        links: "/contacts"
     }
 ]
 
@@ -183,12 +187,25 @@ const config_project_list = [
         title: "Personal website", 
         text_thumbnail: "My personal website, used to display my profile, skills and projects, and my place to try new technology (react).",
         source_code: "https://github.com/fadhil-riyanto/fadhil-personal-web"
-    }
+    },
+    {
+        image: BlogHelper.Asset("asd_ckanji.png"),
+        title: "CKanji", 
+        text_thumbnail: "Lookup japanese kanji using terminal",
+        source_code: "https://github.com/fadhil-riyanto/kanjic"
+    },
+    {
+        image: BlogHelper.Asset("shortlikn.png"),
+        title: "Shortlink", 
+        text_thumbnail: "Mini shortlink with simple analysis",
+        source_code: "https://github.com/fadhil-riyanto/shortlink"
+    },
+    // 
 ]
 
 
 export {
     config, config_dropdown_links, config_navbar_links, 
-    config_connect_links, config_skills_level, config_tools_level,
+    config_connect_links, config_languange_programming, config_skills_level, config_tools_level,
     config_project_list
 }
