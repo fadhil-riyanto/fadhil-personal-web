@@ -189,7 +189,7 @@ const config_project_list = [
         source_code: "https://github.com/fadhil-riyanto/fadhil-personal-web"
     },
     {
-        image: BlogHelper.Asset("asd_ckanji.png"),
+        image: BlogHelper.Asset("asd-kanjic.png"),
         title: "CKanji", 
         text_thumbnail: "Lookup japanese kanji using terminal",
         source_code: "https://github.com/fadhil-riyanto/kanjic"
