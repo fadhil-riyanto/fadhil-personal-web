@@ -12,6 +12,7 @@ import '../node_modules/bootstrap-icons/font/bootstrap-icons.min.css';
 import IndexPage from './page/Index'
 import BlogPage from './page/Blogs'
 import AboutPage from './page/About.js';
+import ContactsPage from './page/ContactsPage.js'
 import UnderConstruction from './page/UnderConstruction'
 
 // essential
@@ -45,8 +46,8 @@ const default_route = [
     element: <ProjectsPage />
   },
   {
-    path: "/resume",
-    element: <UnderConstruction />
+    path: "/contacts",
+    element: <ContactsPage />
   }
 ]
 
