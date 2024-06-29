@@ -48,7 +48,7 @@ const ContactsPage = () => {
                     <div className='pt-5'>
                         <Card title={"email"} content={"me@fadev.org"} key="1"/>
                         {/* <Separator /> */}
-                        <Card title={"GPG keys"} content={"gpg --keyserver keyserver.ubuntu.com --recv CCF1E406872BE544"} key="2"/>
+                        <Card title={"GPG keys"} content={"gpg --keyserver keyserver.ubuntu.com --recv 9DA0EA2EAD1D7E47"} key="2"/>
                     </div>
                 </div>
             </div>

@@ -13,7 +13,7 @@ const config_dropdown_links = [
     // },
     {
         name: "Book",
-        links: "/ebook"
+        links: "https://github.com/fadhil-riyanto/personal-books"
     },
     {
         name: "Music",
@@ -39,7 +39,7 @@ const config_languange_programming = [
     },
     {
         logo: BlogHelper.Asset("Typescript_logo_2020.svg.png"),
-        name: "Typescript", 
+        name: "Typescript (backend)", 
         level: "Advanced"
     },
     {
@@ -69,7 +69,7 @@ const config_skills_level = [
     {
         logo: BlogHelper.Asset("jsIconGreen.svg"),
         name: "NodeJS", 
-        level: "Intermediate"
+        level: "Advanced"
     },
     {
         logo: BlogHelper.Asset("css.png"),
@@ -107,7 +107,7 @@ const config_tools_level = [
     },
     {
         logo: BlogHelper.Asset("mariadb-logo-vertical_white.svg"),
-        name: "MariaDB", 
+        name: "MariaDB / MySQL", 
         level: "Advanced"
     },
     {
@@ -128,6 +128,31 @@ const config_tools_level = [
     {
         logo: BlogHelper.Asset("gdb.png"),
         name: "GNU debugger", 
+        level: "Advanced"
+    },
+    {
+        logo: "https://wiki.postgresql.org/images/3/30/PostgreSQL_logo.3colors.120x120.png",
+        name: "PostgreSQL", 
+        level: "Advanced"
+    },
+    {
+        logo: "https://www.gnu.org/graphics/gnu-head-sm.png",
+        name: "GNU User", 
+        level: "Advanced"
+    },
+    {
+        logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Fish-shell-logo-ascii.svg/120px-Fish-shell-logo-ascii.svg.png",
+        name: "Fishshell", 
+        level: "Advanced"
+    },
+    {
+        logo: "https://www.json.org/img/json160.gif",
+        name: "JSON", 
+        level: "Advanced"
+    },
+    {
+        logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/GraphQL_Logo.svg/512px-GraphQL_Logo.svg.png?20161105194737",
+        name: "GraphQL", 
         level: "Advanced"
     }
 ]
@@ -176,12 +201,7 @@ const config_project_list = [
         text_thumbnail: "simple CBT that prevent student doing cheat with ctrl + c",
         source_code: "https://github.com/fadhil-riyanto/jujurCBT"
     },
-    {
-        image: BlogHelper.Asset("math-imouto-1.png"),
-        title: "Math Imouto", 
-        text_thumbnail: "endless math game for first grade school",
-        source_code: "https://github.com/fadhil-riyanto/math-imouto"
-    },
+    
     {
         image: BlogHelper.Asset("myweb.png"),
         title: "Personal website", 
@@ -195,11 +215,42 @@ const config_project_list = [
         source_code: "https://github.com/fadhil-riyanto/kanjic"
     },
     {
+        image: "https://socialify.git.ci/fadhil-riyanto/fdatabase/image?description=1&forks=1&issues=1&language=1&name=1&owner=1&pulls=1&stargazers=1&theme=Light",
+        title: "Fdatabase", 
+        text_thumbnail: "a key value database base on json and program memory",
+        source_code: "https://github.com/fadhil-riyanto/fdatabase"
+    },
+    {
         image: BlogHelper.Asset("shortlikn.png"),
         title: "Shortlink", 
         text_thumbnail: "Mini shortlink with simple analysis",
         source_code: "https://github.com/fadhil-riyanto/shortlink"
     },
+    {
+        image: "https://socialify.git.ci/fadhil-riyanto/chemistry/image?description=1&font=Inter&forks=1&issues=1&language=1&name=1&owner=1&pattern=Circuit%20Board&pulls=1&stargazers=1&theme=Dark",
+        title: "Chemistry", 
+        text_thumbnail: "chemistry and medicine datasheet library",
+        source_code: "https://www.npmjs.com/package/@fadhil-riyanto/chemistry"
+    },
+    {
+        image: "https://socialify.git.ci/fadhil-riyanto/ramdb/image?description=1&forks=1&issues=1&language=1&name=1&owner=1&pulls=1&stargazers=1&theme=Dark",
+        title: "RamDB", 
+        text_thumbnail: "a redis like database (but use flat file).",
+        source_code: "https://www.nuget.org/packages/ramdb/"
+    },
+    {
+        image: "https://socialify.git.ci/fadhil-riyanto/archlinux-api-wrapper/image?description=1&descriptionEditable=simple%20dotnet%20c%23%20library%20for%20fetch%20data%20from%20archlinux%20search%20web%20api&font=Inter&forks=1&issues=1&language=1&name=1&owner=1&pattern=Overlapping%20Hexagons&pulls=1&stargazers=1&theme=Dark",
+        title: "Archlinux Search API", 
+        text_thumbnail: "a simple dotnet C# library for fetch data from archlinux search web api",
+        source_code: "https://www.nuget.org/packages/Archlinux.Api"
+    },
+    {
+        image: BlogHelper.Asset("math-imouto-1.png"),
+        title: "Math Imouto", 
+        text_thumbnail: "endless math game for first grade school",
+        source_code: "https://github.com/fadhil-riyanto/math-imouto"
+    },
+    
     // 
 ]
 
