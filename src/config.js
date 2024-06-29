@@ -191,7 +191,13 @@ const config_connect_links = [
         name: "Google developer",
         links: "https://developers.google.com/profile/u/fadhil-riyanto",
         icon: "bi bi-google"
-    }
+    },
+    {
+        name: "@fadhil_riyanto@mastodon.social",
+        links: "https://mastodon.social/@fadhil_riyanto",
+        icon: "bi bi-mastodon"
+    },
+    
 ]
 
 const config_project_list = [

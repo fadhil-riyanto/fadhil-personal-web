@@ -1,4 +1,5 @@
 import { config_connect_links } from '../config';
+import { Link } from 'react-router-dom'
 
 const LinksJumbotron = ({links, icon}) => {
     return (
@@ -25,9 +26,10 @@ const Jumbotron = (darkModeState) => {
                                     <LinksJumbotron links={item.links} icon={item.icon}/>
                                 )}
                             </h3>
-                            <button className="btn btn-outline-warning btn-lg" type="button">
+                            {/* <button className="btn btn-outline-warning btn-lg" type="button">
                             Contact me
-                            </button>
+                            </button> */}
+                            <Link to="/contacts" className="btn btn-outline-warning btn-lg">Contact me</Link>
                         </div>
                         <div className="col-lg-3 order-1 order-lg-2">
                             <img src="https://avatars.githubusercontent.com/u/61084125" alt="profile" className="img-fluid"></img>
