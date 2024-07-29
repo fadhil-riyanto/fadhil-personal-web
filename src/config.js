@@ -204,7 +204,7 @@ const config_project_list = [
     {
         image: BlogHelper.Asset("c2-jujurCBT.png"),
         title: "JujurCBT", 
-        text_thumbnail: "simple CBT that prevent student doing cheat with ctrl + c",
+        text_thumbnail: "simple CBT that prevent student doing cheat with ctrl + C",
         source_code: "https://github.com/fadhil-riyanto/jujurCBT"
     },
     
@@ -256,6 +256,31 @@ const config_project_list = [
         text_thumbnail: "endless math game for first grade school",
         source_code: "https://github.com/fadhil-riyanto/math-imouto"
     },
+    {
+        image: BlogHelper.Asset("myredis.png"),
+        title: "MyRedis", 
+        text_thumbnail: "Very simple redis manager, build with typescript, graphql, and preactjs ",
+        source_code: "https://github.com/fadhil-riyanto/myredis"
+    },
+    {
+        image: "https://socialify.git.ci/fadhil-riyanto/cat-io-uring/image?description=1&forks=1&issues=1&language=1&name=1&owner=1&pulls=1&stargazers=1&theme=Light",
+        title: "CAT io_uring", 
+        text_thumbnail: "cat using syscall io_uring, and some linux kernel stuff, my repository learning io_uring",
+        source_code: "https://github.com/fadhil-riyanto/cat-io-uring"
+    },
+    {
+        image: "https://socialify.git.ci/fadhil-riyanto/d-tcp/image?description=1&forks=1&issues=1&language=1&name=1&owner=1&pattern=Formal%20Invitation&pulls=1&stargazers=1&theme=Light",
+        title: "Debug TCP", 
+        text_thumbnail: "A flexible and simple set TCP connection debugging tools, used to debug TCP socket app ",
+        source_code: "https://github.com/fadhil-riyanto/d-tcp"
+    },
+    {
+        image: BlogHelper.Asset("logo-rocksdb-official-fb.jpg"),
+        title: "Rockserver", 
+        text_thumbnail: "A redis-like database server using RocksDB/Facebook backend",
+        source_code: "https://github.com/fadhil-riyanto/rockserver"
+    },
+    // 
     
     // 
 ]
